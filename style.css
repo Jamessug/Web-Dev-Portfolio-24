@@ -1,65 +1,78 @@
-/* General Styling */
+/* GENERAL */
 
+/* Importing the Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/* Resetting default margin and padding */
 * {
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 
+/* Applying Poppins font to the entire document */
 body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Enabling smooth scrolling behavior */
 html {
     scroll-behavior: smooth;
 }
 
+/* Setting paragraph text color */
 p {
     color: rgb(85, 85, 85);
 }
 
-/* Transition */
+/* TRANSITION
 
+/* Defining transition properties for links and buttons */
 a, .btn {
     transition: all 300ms ease;
 }
 
-/* Desktop Navigation */
+/* DESKTOP NAV */
 
+/* Styling for navigation elements */
 nav, .nav-links {
     display: flex;
 }
 
+/* Styling for the main navigation bar */
 nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+    justify-content: space-around; /* Distributing items evenly */
+    align-items: center; /* Centering items vertically */
+    height: 17vh; /* Setting navbar height */
 }
 
+/* Styling for navigation links */
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+    gap: 2rem; /* Spacing between links */
+    list-style: none; /* Removing bullet points */
+    font-size: 1.5rem;  
 }
 
+/* Styling for anchor (link) elements */
 a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
+    color: black; /* Default link color */
+    text-decoration: none; /* Removing underlines */
+    text-decoration-color: white; /* Setting underline color */
 }
 
+/* Hover effect for anchor elements */
 a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: rgb(181, 181, 181);
+    color: grey; 
+    text-decoration: underline; /* Underline on hover */
+    text-underline-offset: 1rem; /* Adjusting underline position */
+    text-decoration-color: rgb(181, 181, 181); /* Changing underline color */
 }
 
+/* Styling for the logo */
 .logo {
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
+/* Hover effect for the logo */
 .logo:hover {
-    cursor: default;
+    cursor: default; 
 }
