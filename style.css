@@ -76,3 +76,26 @@ a:hover {
 .logo:hover {
     cursor: default; 
 }
+
+/* HAMBURGER MENU */
+
+/* Hiding the hamburger menu on desktop */
+#hamburger-nav {
+    display: none;
+}
+
+/* Styling for the hamburger menu container */
+.hamburger-menu {
+    position: relative; /* Allowing absolute positioning of child elements */
+    display: inline-block; /* Ensuring the menu sits inline with other content */
+}
+
+/* Styling for the hamburger icon */
+.hamburger-icon {
+    display: flex; /* Using flexbox for easy vertical alignment of icon lines */
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 24px; 
+    width: 30px; 
+    cursor: pointer; /* Providing visual feedback to users that the icon is clickable */
+}
