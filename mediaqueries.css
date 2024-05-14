@@ -1,0 +1,13 @@
+/* MEDIA QUERIES */
+
+/* Hiding the desktop navigation when screen width is less than or equal to 1200px */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none; /* Hiding desktop navigation */
+    }
+
+    /* Showing the hamburger navigation when screen width is less than or equal to 1200px */
+    #hamburger-nav {
+        display: flex; /* Displaying hamburger navigation */
+    }
+}
