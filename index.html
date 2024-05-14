@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">James Sugden</div>
+    <nav id="desktop-nav"> <!-- Main desktop navbar for the different sections of the page -->
+        <div class="logo">James Sugden</div> <!---->
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -18,7 +18,22 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
-
+    </nav>
+    <nav id="hamburger-nav"> <!-- Hamburger Navbar for Mobile instead of above desktop version -->
+        <div class="logo">James Sugden</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()"> <!-- Added a click event to the hamburger icon to toggle the menu -->
+                <span></span> <!-- Lines of menu to style later -->
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links"> <!-- -->
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#Experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#Projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#Contact"onclick="togglemenu()" >Contact</a></li>
+            </div>
+        </div>
     </nav>
     <script src="script.js"></script>   
 </body>
