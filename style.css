@@ -107,7 +107,7 @@ a:hover {
     transition: all 0.3s ease-in-out; /* Smooth transition for interactive effects */
 }
 
-/* Styling for the dropdown menu links */
+/* Styling for the dropdown menu links container */
 .menu-links {
     position: absolute; /* Positioned relative to the hamburger menu */
     top: 100%; /* Placed directly below the hamburger menu */
@@ -118,3 +118,54 @@ a:hover {
     overflow: hidden; 
     transition: all 0.3s ease-in-out; /* Smooth transition for height changes */
 }
+
+/* Styling for the dropdown menu links */
+.menu-links a {
+    display: block; /* Ensures each link takes up the full width of its container */
+    padding: 10px; 
+    text-align: center; 
+    font-size: 1.5rem; 
+    color: black; 
+    text-decoration: none; /* Removes the underlines */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.menu-links li {
+    list-style: none; /* Removes the bullet points */
+}
+
+.menu-links.open {
+    max-height: 300px; /* Sets the maximum height when the menu is open, allowing it to be visible */
+}
+
+
+/* Transform the first span element by rotating it into an X and moving it slightly in both x and y directions */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+/* Hide the second span element to make the middle line disappear */
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Transform the last span element by rotating it into an X and moving it slightly in both x and y directions */
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Reset transformations when the menu is not open */
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* Ensure the middle span element is visible when the menu is not open */
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+
+/* Reset transformations for the last span element when the menu is not open */
+.hamburger-icon span:last-child {
+    transform: none;
+}
+ 
