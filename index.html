@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
@@ -35,6 +35,34 @@
             </div>
         </div>
     </nav>
+    <section id="profile"> <!-- All styles in section added later -->
+        <div class="section__pic-container"> <!-- avatar container-->
+            <img src="./assets/profile-pic.png" alt="My avatar"/> <!-- my avatar, no pic yet -->
+        </div>
+        <div class="section__text"> <!-- Intro -->
+            <p class="section__text__p1">Hi, I'm</p>
+            <h1 class="title">James Sugden</h1>
+            <p class="section__text__p2">Front-end Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume')">
+                Download CV
+                </button> <!-- CV not added yet -->
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container"> <!-- to be added later -->
+                <img src="./assets/linkedin.png" 
+                     alt="My LinkedIn"
+                     class="icon"
+                     onclick="location.href='https://linkedin.com/'"> 
+                     <img src="./assets/github.png" 
+                     alt="My Github"
+                     class="icon"
+                     onclick="location.href='https://github.com/'"> 
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>   
 </body>
 </html> 
