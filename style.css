@@ -169,3 +169,53 @@ a:hover {
     transform: none;
 }
  
+/* SECTIONS */
+
+/*Consistent to all sections */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem; /* Adds space on the left and right */
+    box-sizing: border-box; /* So padding and border are included in the element's total width and height */
+    min-height: fit-content; /* So content does not overlap */
+}
+
+.section-container {
+    display: flex; /* Flexbox layout for sections */
+}
+
+/* PROFILE SECTION */
+
+/* Section container but specific to profile */
+#profile {
+    display: flex; 
+    justify-content: center; 
+    gap: 5rem; /* Space between avatar and text */
+    height: 80vh; 
+}
+
+/* Picture container */
+.section__pic-container {
+    display: flex; 
+    margin: auto 0; /* Centers avatar vertically */
+}
+
+/* Intro container */
+.section__text {
+    align-self: center; /* Vertically centers text within the container */
+    text-align: center; /* Centers text horizontally */
+}
+
+.section__text p {
+    font-weight: 600; 
+}
+
+#socials-container {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1rem; 
+    gap: 1rem; /* Space between each social icon */
+}
+
+
+/* ICONS */
