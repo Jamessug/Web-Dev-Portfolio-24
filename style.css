@@ -220,7 +220,7 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+     ont-size: 3rem;
     text-align: center;
 }
 
@@ -282,5 +282,64 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem;
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+/* Styles the entire about section, relative to allow for precise placement of child elements */
+#about {
+    position: relative; 
+}
+
+.about-containers {
+    display: flex; 
+    gap: 2rem; 
+    margin-bottom: 2rem; 
+    margin-top: 2rem; 
+}
+
+/* Center the detailed information within the about section */
+.about-details-container {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+}
+
+.about-pic {
+    border-radius: 2rem; 
+}
+
+.arrow {
+    position: absolute; 
+    right: -5rem; /* Places the arrow to the right outside the normal flow */
+    bottom: 2.5rem; 
+}
+
+/* Styles the containers that hold detail items like experience and education */
+.details-container {
+    padding: 1.5rem; 
+    flex: 1; /* Allows the container to grow and fill available space */
+    background: white; 
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163); 
+    text-align: center; 
+}
+
+/* Consistent gap and height for section containers */
+.section-container {
+    gap: 4rem; 
+    height: 80%; 
+}
+
+/* Styles for picture containers across different sections */
+.section__pic-container {
+    height: 400px; 
+    width: 400px; 
+    margin: auto 0; /* Centers the container vertically */
 }
